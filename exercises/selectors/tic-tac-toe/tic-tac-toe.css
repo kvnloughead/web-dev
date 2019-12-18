@@ -1,0 +1,54 @@
+h1 {
+	width: 50%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+table {
+	margin: 0px auto;
+}
+
+tr {
+	/*background-color: pink;*/
+}
+
+td {
+	width: 100px;
+	height: 100px;
+	/*background-color: green;*/
+}
+
+td:hover {
+	border: 1px solid grey;
+}
+
+
+.vertical {
+	border-left: solid black 1px;
+	border-right: solid black 1px;		
+}
+
+.horizontal {
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+}
+/*
+.top {
+	border-top: solid black 1px;
+}
+
+.right {
+	border-right: solid black 1px;
+}
+
+.bottom {
+	border-bottom: solid black 1px;
+}
+
+.left {
+	border-left: solid black 1px;
+}
+
+.box {
+	border: solid black 1px;
+}*/
