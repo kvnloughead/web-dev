@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Bootstrap Basics
+	</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+	<h1>Bootstrap Basics</h1>
+	<p>There are two options for using Bootstrap.</p>
+	<ol>
+		<li>Download the files and use <code>bootstrap.css</code> as you would any other <code>.css</code> file, or</li>
+		<li>Link to the online version at <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css</a>.</li>
+	</ol>
+
+	<h2>Buttons</h2>
+	<p>There are several different button styles you can choose from, ranging from friendly green (<code>class="btn btn-success"</code>) to danger-red (<code>class="btn btn-danger"</code>).  Like so:</p>
+	<button class="btn btn-success">CLICK ME!</button>
+	<button class="btn btn-danger">DON'T CLICK ME!!</button>
+	<p>Hmm... that still seems too dangerous to me.  Let's use <code>btn-lg</code> and <code>btn-xs</code>to make that danger button relatively unappealling.</p>
+	<button class="btn btn-success btn-lg">CLICK ME!</button>
+	<button class="btn btn-danger btn-xs">DON'T CLICK ME!!</button>
+	<p>Of course, you can make buttons functional by wrapping them in anchor tags.  Like this:</p>
+	<a href="https://getbootstrap.com/"><button class="btn btn-info">Go to Bootstrap</button></a>
+	<p>We can also mark buttons as active using the boolean attribute <code>active</code> and disable them using <code>disabled="disabled"</code>.</p>
+
+		<div class="jumbotron">
+			<h1>Behold, Jumbotron!</h1>
+			<p>Declaring <code>class="jumbotron"</code> enables this beast.  Inside the jumbotron <code>div</code>, there's an <code>h1</code>, a <code>p</code> and a <code>button</code>.</p>
+			<button class="btn btn-info btn-lg">Enter his lair and tremble!</button>	
+		</div>
+	
+	<div class="container">
+			<div class="jumbotron">
+				<h1>Behold, centered Jumbotron!</h1>
+				<p>Wrapping jumbotron inside of a <code>div</code> with <code>class="container"</code> centers it.</p>
+			</div>
+		
+
+		<h2>Forms</h2>
+		<p>Here is a basic web form, copied from the Bootsrap docs.  We can adjust its horizontal width using the Bootstrap grid system.</p>
+		<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="form-group form-check">
+	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+	<p>The classes that make this form work are <code>form-group</code>, which groups together (in a <code>div</code>) inputs with their respective labels and/or buttons, and <code>form-control</code> which styles the <code>input</code> elements.</p>
+
+	<p>And here is an inline form (just add <code>class="form-inline"</code>)</p>
+
+	<form class="form-inline">
+	  <div class="form-group mb-2">
+	    <label for="staticEmail2" class="sr-only">Email</label>
+	    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+	  </div>
+	  <div class="form-group mx-sm-3 mb-2">
+	    <label for="inputPassword2" class="sr-only">Password</label>
+	    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+	  </div>
+	  <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+	</form>
+
+</div>
+
+</body>
+</html>
