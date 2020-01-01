@@ -1,0 +1,36 @@
+/* .flex exists to enable images of varying heights to coexist within a single row. */
+.flex {
+		display: flex;
+		flex-wrap: wrap;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.jumbotron {
+	background-color: #ffffe6;
+	color: #33bbff;
+}
+
+.navbar {
+	background-color: #00cccc;
+}
+
+/* Changes color of hamburger icon */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffc3 !important;;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffc3;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffc3;
+}
+
+/*.navbar-toggle .icon-bar {
+  color: #ffffb3;
+}*/
+

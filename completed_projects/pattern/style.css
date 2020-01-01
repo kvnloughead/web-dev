@@ -1,0 +1,9 @@
+#header {
+    background: url("imgs/header.jpeg") center center / cover no-repeat;
+    /* If you want larger bricks: */
+    /* background: url("imgs/header.jpeg"); */
+}
+/* Not sure why my anchors the navbar aren't showing up white by default. */
+.navbar a {
+    color: white;
+}
