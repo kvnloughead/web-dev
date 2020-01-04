@@ -13,9 +13,16 @@ while(input !== "quit"){
     } 
     else if(input === "new") {
         //add item to list
-        var newTodo = prompt("Enter new todo:");
-        todos.push(newTodo);
-        console.log(newTodo + " added to list");
+        var newItem = prompt("Enter new todo:");
+        todos.push(newItem);
+        console.log(newItem + " added to list");
+    }
+    else if(input === "delete"){
+        var doneItem = prompt("Which item would you like to delete?")
+        var todos = todos.filter(function(item){
+            return item !== doneItem
+        });
+        console.log(doneItem + " removed from list")
     }
 }
 
