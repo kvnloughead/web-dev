@@ -5,7 +5,11 @@ while(input !== "quit"){
     
     if(input === "list"){
         //list items
-        console.log(todos);
+        console.log("Here is your todo list:")
+        todos.forEach(function(item, i){
+            console.log(i + ": " + item)
+        });
+        console.log("======================");
     } 
     else if(input === "new") {
         //add item to list
