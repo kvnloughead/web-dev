@@ -18,11 +18,20 @@ while(input !== "quit"){
         console.log(newItem + " added to list");
     }
     else if(input === "delete"){
-        var doneItem = prompt("Which item would you like to delete?")
-        var todos = todos.filter(function(item){
-            return item !== doneItem
-        });
-        console.log(doneItem + " removed from list")
+        var doneItem = prompt(`Which item would you like to delete?\n \
+        You may enter the entry itself, or its index.`)
+        if (Number.isInteger(Number(doneItem)) && Number(doneItem) < todos.length){
+            console.log("Todo #" + doneItem + ": '" + todos[doneItem] + "' removed from list")
+            todos.splice(doneItem, 1)
+        } 
+        else {
+        //else, doneItem is an entry
+            console.log("Todo #" + todos.indexOf(doneItem) + ": '" + doneItem + "' removed from list")
+            var todos = todos.filter(function(item){
+                return item !== doneItem
+            });
+            
+        }
     }
 }
 
