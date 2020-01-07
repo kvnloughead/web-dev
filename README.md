@@ -1,1 +1,0 @@
-These are my notes, solutions to exercises and projects from <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Developer Bootcamp</a> from Udemy.

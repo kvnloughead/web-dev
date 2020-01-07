@@ -1,0 +1,27 @@
+/* .flex exists to enable images of varying heights to coexist within a single row. */
+.flex {
+		display: flex;
+		flex-wrap: wrap;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.jumbotron {
+	background-color: #ffffe6;
+	color: #33bbff;
+}
+
+.navbar {
+	background-color: #00cccc;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffad;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffb3`;
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css ">
+	<style type="text/css">
+		.red-back {
+			background: #eca1a6;
+			border: purple solid 1px;
+		}
+
+		.green-back {
+			background: #bdcebe;
+			border: red dashed 1px;
+			height: 50px;
+
+		}
+
+		.brown-back {
+			background: #ada397;
+		}
+
+		.grey-back {
+			background: #d6cbd3;
+
+		}
+	</style>
+
+</head>
+<body class="grey-back">
+	<div class="container">
+		<h2>Grid Basics</h2>
+		<p>Bootstrap's grid system is a 12 column system.  </p>
+		<div class="row">
+			<div class="col-lg-2 red-back">COL LG 2</div>
+			<div class="col-lg-8 red-back">COL LG 8</div>
+			<div class="col-lg-2 red-back">COL LG 2</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 red-back">COL LG 3</div>
+			<div class="col-lg-4 red-back">COL LG 4</div>
+			<div class="col-lg-5 red-back">COL LG 5</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Responsiveness</h2>
+		<p>Layouts can be made repsonsive by declaring additional classes of the form <code>col-n-x</code> where <code>n</code> is in <code>[xs, sm, md, lg]</code> and <code>x</code> is a number between 1 and 12.</p>
+
+		<div class="row">
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+			<div class="col-lg-1 col-md-2 red-back">col-lg-1 col-md-2</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Example</h2>
+		<p>A arrangement of cells that is 4 across on large and medium screens, 2 across on small screens and 1 across on xs screens.<br>
+		Notes:</p>
+		<ul>
+			<li>We don't need to declare a <code>col-lg-x</code> class, since we don't desire a different behavior than we have for medium size.</li>
+			<li>We also do not need to explicitly declare <code>col-xs-12</code>.  This is the default behavior on extrasmall screens.</li>
+			<li>This example also illustrates row nesting.</li>
+		</ul>
+
+		<div class="row">
+			<div class="col-md-3 col-sm-6 red-back">
+				<div class="row">
+					<div class="col-lg-6 green-back">First Half</div>
+					<div class="col-lg-6 green-back">Other Half</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 red-back">Tour Dates</div>
+			<div class="col-md-3 col-sm-6 red-back">Tour Dates</div>
+			<div class="col-md-3 col-sm-6 red-back">
+				<div class="row">
+					<div class="col-lg-2 green-back"></div>
+					<div class="col-lg-2 green-back"></div>
+					<div class="col-lg-2 green-back"></div>
+					<div class="col-lg-2 green-back"></div>
+					<div class="col-lg-2 green-back"></div>
+					<div class="col-lg-2 green-back"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
